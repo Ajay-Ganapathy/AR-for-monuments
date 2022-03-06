@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html id="home">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>	
+    /* overlay */
+    .container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+    /* slideshow */
+    * {box-sizing: border-box;}
+body {
+font-family: Verdana, sans-serif;
+background-image: url('img2.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+font-size:20px;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 620px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    /* section */
+      section {
+        background: red;
+        height: 100vh;
+        text-align: center;
+        font-size: 5em;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      #section1{
+        background-color:lightgoldenrodyellow;
+      }
+      #section2{
+        background-color:lightsteelblue;
+      }
+      #section3{
+        background-color:lightgreen;
+      }
+ /*page  */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1  style="text-align: center;color: white">Travel for life-----Make your Travel diaries</h1>
+<div class="navbar">
+  
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Travel to
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#section1">TAJ MAHAL</a>
+    <a href="#section2">QUTUB MINAR</a> 
+    <a href="#section3">AJANTA CAVES</a>
+  </div>
+  </div> 
+  <a href="https://www.tripadvisor.in/Tourism-g33560-Monument_El_Paso_County_Colorado-Vacations.html">Trip Advisor</a> 
+  <a href="review.html">Review</a></p>
+
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img5.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img3.jpg" style="width:100%">
+    </div>
+    <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+    </div>
+<div id="section1">
+<div class="container">
+    <br>
+ <div class="sketchfab-embed-wrapper"> <iframe title="Taj Mahal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/cf2ee708119a43c2a8dc25c46d7b65c1/embed" style = "height : 60vh; width : 100%; display : flex; align-items : center;""> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">  </p></div>
+  <div class="overlay" >TAJ MAHAL</div>
+</div>
+<br>
+<div style="text-align: center;" >
+  <ul>
+  <li>The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture.</li>
+  <li>Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.</li>
+  <li>The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods.</li>
+    <li>The relief work in marble and inlay with precious and semi precious stones make it a monument apart. </li>
+</ul> 
+    <br>
+    <br>
+    Location: DELHI
+    <br><br>    
+    BEST TIME TO VISIT TAJ MAHAL:
+  October to March:
+  <ul>
+  <li> The best time to visit Agra is between autumn and winter as by this time the heat has ebbed and the weather is pleasant and perfect for sightseeing.</li>
+  <li>Spend an afternoon at the Taj complex ambling through the grounds and enjoying the beauty of this magnificent monument.</li>
+</ul> 
+    
+    <br> <br>   
+    WHY VISIT TAJ MAHAL?:
+  <ul>
+    <li>
+    Famous as a symbol of love, this magnificent monument has been making onlookers turn green with envy since ages.
+  </li>
+  <li>
+  In short, regardless of whether you are from this country or from overseas, one trip to Agra and feasting your eyes on Taj Mahal is a must, at least once in your lifetime.
+  </li>  
+  </ul>
+  </div>
+<div>
+<a href="#home" style="text-align:right">Move to top</a>
+</div>
+<br>
+</div>
+<div id="section2" class="fifty">
+    <div class="container">
+        <br>
+   <div class="sketchfab-embed-wrapper"> <iframe title="Qutb Minar Environment Block-out" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/239b025e19ea460eb87a0e66ac280d72/embed" style = "height : 60vh; width : 100%; display : flex; align-items : center;"> </iframe>  </div>
+    <div class="overlay">QUTUB MINAR</div>
+  </div>
+  <br>
+  <div style="text-align: center;" >
+    <ul>
+      <li>Qutub Minar in Delhi is world heritage site. The tall minaret was constructed in 1192 by Qutab-ud-din Aibak, and later completed by his successor Iltutmish.</li> 
+      <li>The soaring conical tower is an exquisite example of Indo-Islamic Afghan architecture.Qutub Minar is a World Heritage Site and has survived the ravages of time impressively.</li>
+      <li>The Minar of Delhi is surrounded by a lush green garden, which is an ideal leisurely place for visitors. Qutab Minar is the favourite destination of tourists.</li>
+      </ul>
+    <br><br>   
+    Location: DELHI
+    <br><br>       
+    BEST TIME TO VISIT QUTUB MINAR:
+    <ul>
+    <li>Completed in the 12th century, the beautiful Qutub Minar is India's tallest minaret. </li>
+    <li>It's also now a UNESCO Word Heritage Site that attracts many international visitors eager to climb to the top for its breathtaking views of the surrounding area.</li>
+      </ul>
+    <br><br>       
+    WHY VISIT QUTUB MINAR?
+    <ul>
+      <li>The tallest minaret in India, Qutub Minar is among the iconic monuments of Delhi.</li>
+      <li>Known as the 'Tower of Victory', the construction of the minaret also marked the beginning of the Muslim rule in India.</li>
+      <li>Located at Mehrauli, around 3.9 million people visit the structure every year.</li>
+      </ul> 
+    
+  </div>
+  <div>
+  <a href="#home" style="text-align:right">Move to top</a>
+
+  </div>
+  <br>
+</div>
+<div id="section3">
+    <div class="container">
+        <br>
+      <div class="sketchfab-embed-wrapper"> <iframe title="Ellora Caves | India" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1a5ec1e212f9451e80dc051e97164d17/embed?autostart=1" style = "height : 60vh; width : 100%; display : flex; align-items : center;"> <le = "height" 60vh; /ifram e00>;</div>
+    <div class="overlay">AJANTA CAVES</div>
+  </div>
+  <br>
+  <div style="text-align: center;" >
+   <ul>
+     <li>The caves at Ajanta are excavated out of a vertical cliff above the left bank of the river Waghora in the hills of Ajanta. </li>
+     <li>They are thirty in number, including the unfinished ones, of which five (caves 9, 10, 19, 26 and 29) are chaityagrihas (sanctuary) and the rest, sangharamas or viharas (monastery).</li>
+     <li>The caves are connected with the river by rock-cut staircases. The excavation activity was carried out in two different phases separated by an interval of about four centuries.</li>
+   </ul> 
+    <br><br>  
+ Location: MAHARASHTRA
+<br><br>  
+BEST TIME TO AJANTA CAVES:
+    <ul>
+      <li>
+       The months between June and March are considered to be the best time to visit Ajanta. Monsoon (June to September) and winter (November to February) seasons are the best time to explore Ajanta Caves, as the weather is pleasant enough during this time. 
+      </li>
+    </ul>
+    
+<br><br>  
+WHY VISIT AJANTA CAVES?
+    <ul>
+      <li> The Ajanta Caves constitute ancient monasteries and worship-halls of different Buddhist traditions carved into a 75-metre (246 ft) wall of rock.</li>
+ <li>The caves also present paintings depicting the past lives and rebirths of the Buddha, pictorial tales from Aryasura's Jatakamala, and rock-cut sculptures of Buddhist deities.</li>
+    </ul>
+    </div>
+  <div>
+  <a href="#home" style="text-align: right;">Move to top</a>
+  </div>
+  <br>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" >
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    </script>
+</body>
+</html>
