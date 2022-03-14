@@ -643,7 +643,7 @@ const popup = new mapboxgl.Popup({ closeOnClick: false })
 <img src=
 "https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
         class="qr-code img-thumbnail img-responsive" />
-       <a class = "btn btn-primary" href = "ar.html"> View AR Model </a>`
+       <a class = "btn btn-primary" href = "${currentFeature.properties.city}.html"> View AR Model </a>`
 )
 .addTo(map);
 }
